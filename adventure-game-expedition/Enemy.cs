@@ -1,6 +1,6 @@
 ﻿namespace adventure_game_expedition
 {
-    abstract class Enemy
+    abstract class Enemy : Mover
     {
 
     }
