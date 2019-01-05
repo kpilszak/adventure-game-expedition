@@ -9,5 +9,10 @@
         {
             PickedUp = false;
         }
+
+        public void PickUpWeapon()
+        {
+            PickedUp = true;
+        }
     }
 }
