@@ -8,5 +8,11 @@ namespace adventure_game_expedition
         protected Point location;
         public Point Location { get { return location; } }
         protected Game game;
+
+        public Mover(Game game, Point location)
+        {
+            this.game = game;
+            this.location = location;
+        }
     }
 }
