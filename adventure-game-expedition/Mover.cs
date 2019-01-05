@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 
 namespace adventure_game_expedition
 {
@@ -13,6 +14,14 @@ namespace adventure_game_expedition
         {
             this.game = game;
             this.location = location;
+        }
+
+        public bool Nearby(Point locationToCheck, int distance)
+        {
+            if (Math.Abs(location.X - locationToCheck.X) < distance && (Math.Abs(location.Y - locationToCheck.Y) < distance))
+                return true;
+            else
+                return false;
         }
     }
 }
