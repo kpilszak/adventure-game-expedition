@@ -25,5 +25,12 @@ namespace adventure_game_expedition
             this.boundaries = boundaries;
             player = new Player(this, new Point(boundaries.Left + 10, boundaries.Top + 70));
         }
+
+        public void Move(Direction direction, Random random)
+        {
+            player.Move(direction);
+            foreach (Enemy enemy in Enemies)
+                enemy.Move(random);
+        }
     }
 }
