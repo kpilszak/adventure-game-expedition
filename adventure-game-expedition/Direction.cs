@@ -8,6 +8,9 @@ namespace adventure_game_expedition
 {
     enum Direction
     {
-
+        Up,
+        Down,
+        Left,
+        Right,
     }
 }
