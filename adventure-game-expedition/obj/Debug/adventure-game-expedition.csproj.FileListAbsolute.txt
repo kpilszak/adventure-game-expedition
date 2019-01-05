@@ -1,0 +1,10 @@
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\adventure-game-expedition\adventure-game-expedition\bin\Debug\adventure-game-expedition.exe.config
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\adventure-game-expedition\adventure-game-expedition\bin\Debug\adventure-game-expedition.exe
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\adventure-game-expedition\adventure-game-expedition\bin\Debug\adventure-game-expedition.pdb
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\adventure-game-expedition\adventure-game-expedition\obj\Debug\adventure-game-expedition.csprojAssemblyReference.cache
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\adventure-game-expedition\adventure-game-expedition\obj\Debug\adventure_game_expedition.Form1.resources
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\adventure-game-expedition\adventure-game-expedition\obj\Debug\adventure_game_expedition.Properties.Resources.resources
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\adventure-game-expedition\adventure-game-expedition\obj\Debug\adventure-game-expedition.csproj.GenerateResource.cache
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\adventure-game-expedition\adventure-game-expedition\obj\Debug\adventure-game-expedition.csproj.CoreCompileInputs.cache
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\adventure-game-expedition\adventure-game-expedition\obj\Debug\adventure-game-expedition.exe
+C:\Users\klaud\OneDrive\_Tygodniówka\C#\adventure-game-expedition\adventure-game-expedition\obj\Debug\adventure-game-expedition.pdb
