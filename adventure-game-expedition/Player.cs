@@ -17,5 +17,11 @@ namespace adventure_game_expedition
                 return names;
             }
         }
+
+        public Player(Game game, Point location)
+            : base(game, location)
+        {
+            HitPoints = 10;
+        }
     }
 }
