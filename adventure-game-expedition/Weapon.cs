@@ -38,6 +38,6 @@ namespace adventure_game_expedition
                 target = Move(direction, target, game.Boundaries);
             }
             return false;
-        }
+        }               
     }
 }

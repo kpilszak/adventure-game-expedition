@@ -18,15 +18,25 @@ namespace adventure_game_expedition
 
         public bool Nearby(Point locationToCheck, int distance)
         {
-            if (Math.Abs(location.X - locationToCheck.X) < distance && (Math.Abs(location.Y - locationToCheck.Y) < distance))
+            return Nearby(location, locationToCheck, distance);
+        }
+
+        public bool Nearby(Point location, Point target, int distance)
+        {
+            if (Math.Abs(location.X - target.X) < distance && (Math.Abs(location.Y - target.Y) < distance))
                 return true;
             else
                 return false;
         }
-
+        
         public Point Move(Direction direction, Rectangle boundaries)
         {
-            Point newLocation = location;
+            return Move(direction, location, boundaries);
+        }
+        
+        public Point Move(Direction direction, Point pointToMove, Rectangle boundaries)
+        {
+            Point newLocation = pointToMove;
             switch (direction)
             {
                 case Direction.Up:
