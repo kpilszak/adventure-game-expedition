@@ -19,5 +19,11 @@ namespace adventure_game_expedition
         public int Level { get { return level; } }
         private Rectangle boundaries;
         public Rectangle Boundaries { get { return boundaries; } }
+
+        public Game(Rectangle boundaries)
+        {
+            this.boundaries = boundaries;
+            player = new Player(this, new Point(boundaries.Left + 10, boundaries.Top + 70));
+        }
     }
 }
