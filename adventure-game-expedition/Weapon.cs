@@ -2,6 +2,8 @@
 {
     abstract class Weapon : Mover
     {
+        public bool PickedUp { get; private set; }
+
 
     }
 }

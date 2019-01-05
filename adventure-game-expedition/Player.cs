@@ -24,5 +24,14 @@ namespace adventure_game_expedition
         {
             HitPoints = 10;
         }
+
+        public void Move(Direction direction)
+        {
+            base.location = Move(direction, game.Boundaries);
+            if (!game.WeaponInRoom.PickedUp)
+            {
+
+            }
+        }
     }
 }
