@@ -30,7 +30,7 @@ namespace adventure_game_expedition
             base.location = Move(direction, game.Boundaries);
             if (!game.WeaponInRoom.PickedUp)
             {
-
+                if (Nearby(game.WeaponInRoom, 1)) 
             }
         }
     }
