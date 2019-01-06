@@ -1,4 +1,3 @@
-Challenge your enemies in a mystery dungeon
 <h1 align="right">Adventure Game Expedition</h1><br>
 
 ## Table of contents
@@ -10,10 +9,10 @@ Challenge your enemies in a mystery dungeon
 
 ## General info
 This project is a Windows Forms Application.  
-The main purpose is to place a bet on one of four greyhounds.  
-There are three players.  
-Minimum bet is 5$, maximum is 15$. If you bet less or more, it will automatically adjust to minimum or maximum value.  
-The winner takes twice he bet.
+The main purpose is to defeat all the enemies on all seven levels.  
+It's a turn-based system - you make one move (move or attack) and then the enemy gets a chance to move and attack.  
+You and your enemies have hit points which go down after the attack. Once the hit points get down to zero, the character dies.  
+There are weapons and potions scattered around the dungeon that you can pick up and use to defeat enemies.  
 	
 ## Technologies
 Project is created with:
