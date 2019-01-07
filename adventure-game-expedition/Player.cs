@@ -41,6 +41,22 @@ namespace adventure_game_expedition
             }
         }
 
+        public void Attack(Direction direction, Random random)
+        {
+            if (equippedWeapon != null)
+            {
+                equippedWeapon.Attack(direction, random);
+                if (equippedWeapon is IPotion)
+                {
+                    inventory.Remove(equippedWeapon);
+                    if (inventory.Count > 0)
+                        equippedWeapon = inventory[0];
+                    else
+                        equippedWeapon = null;
+                }
+            }
+        }
+
         public void Hit(int maxDamage, Random random)
         {
 
