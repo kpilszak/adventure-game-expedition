@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 
 namespace adventure_game_expedition
@@ -38,6 +39,12 @@ namespace adventure_game_expedition
                         equippedWeapon = game.WeaponInRoom;
                 }
             }
+        }
+
+        public void Hit(int maxDamage, Random random)
+        {
+
+            HitPoints -= random.Next(1, maxDamage);
         }
     }
 }
