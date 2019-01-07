@@ -15,18 +15,19 @@ namespace adventure_game_expedition
         public Form1()
         {
             InitializeComponent();
+            CenterToScreen();
         }
 
         private Game game;
         private Random random = new Random();
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Form1_Load_1(object sender, EventArgs e)
         {
             game = new Game(new Rectangle(78, 57, 420, 155));
             game.NewLevel(random);
             UpdateCharacters();
         }
-
+        
         public void UpdateCharacters()
         {
             playerIcon.Location = game.PlayerLocation;
@@ -47,7 +48,6 @@ namespace adventure_game_expedition
                     if (enemy.HitPoints > 0)
                     {
                         showBat = true;
-                        batIcon.Visible = true;
                         enemiesShown++;
                     }
                 }
@@ -58,7 +58,6 @@ namespace adventure_game_expedition
                     if (enemy.HitPoints > 0)
                     {
                         showGhost = true;
-                        ghostIcon.Visible = true;
                         enemiesShown++;
                     }
                 }
@@ -69,10 +68,43 @@ namespace adventure_game_expedition
                     if (enemy.HitPoints > 0)
                     {
                         showGhoul = true;
-                        ghoulIcon.Visible = true;
                         enemiesShown++;
                     }
                 }
+            }
+
+            if (!showBat)
+            {
+                batIcon.Visible = false;
+                batLabel.Text = "";
+                batHitPointsLabel.Text = "";
+            }
+            else
+            {
+                batIcon.Visible = true;
+                batLabel.Text = "Bat";
+            }
+            if (!showGhost)
+            {
+                ghostIcon.Visible = false;
+                ghostLabel.Text = "";
+                ghostHitPointsLabel.Text = "";
+            }
+            else
+            {
+                ghostIcon.Visible = true;
+                ghostLabel.Text = "Ghost";
+            }
+            if (!showGhoul)
+            {
+                ghoulIcon.Visible = false;
+                ghoulLabel.Text = "";
+                ghoulHitPointsLabel.Text = "";
+            }
+            else
+            {
+                ghoulIcon.Visible = true;
+                ghoulLabel.Text = "Ghoul";
             }
 
             swordIcon.Visible = false;
@@ -101,7 +133,7 @@ namespace adventure_game_expedition
                     break;
                 default:
                     break;
-            }
+            }            
             weaponControl.Visible = true;
 
             if (game.CheckPlayerInventory("Sword"))
@@ -129,7 +161,7 @@ namespace adventure_game_expedition
             if (game.WeaponInRoom.PickedUp)
                 weaponControl.Visible = false;
             else
-                weaponControl.Visible = false;
+                weaponControl.Visible = true;
 
             if (game.PlayerHitPoints <= 0)
             {
@@ -195,12 +227,6 @@ namespace adventure_game_expedition
                 macePictureBox.BorderStyle = BorderStyle.None;
                 bluePotionPictureBox.BorderStyle = BorderStyle.FixedSingle;
                 redPotionPictureBox.BorderStyle = BorderStyle.None;
-
-                upAttackButton.Width = 34;
-                upAttackButton.Text = "Use";
-                downAttackButton.Visible = false;
-                rightAttackButton.Visible = false;
-                leftAttackButton.Visible = false;
             }
         }
 
@@ -263,6 +289,6 @@ namespace adventure_game_expedition
         {
             game.Attack(Direction.Left, random);
             UpdateCharacters();
-        }
+        }        
     }
 }

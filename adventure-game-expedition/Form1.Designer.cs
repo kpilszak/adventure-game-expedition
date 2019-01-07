@@ -280,9 +280,8 @@
             this.ghoulHitPointsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ghoulHitPointsLabel.Location = new System.Drawing.Point(50, 45);
             this.ghoulHitPointsLabel.Name = "ghoulHitPointsLabel";
-            this.ghoulHitPointsLabel.Size = new System.Drawing.Size(74, 13);
+            this.ghoulHitPointsLabel.Size = new System.Drawing.Size(0, 13);
             this.ghoulHitPointsLabel.TabIndex = 7;
-            this.ghoulHitPointsLabel.Text = "ghoulHitPoints";
             // 
             // ghoulLabel
             // 
@@ -300,9 +299,8 @@
             this.ghostHitPointsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ghostHitPointsLabel.Location = new System.Drawing.Point(50, 30);
             this.ghostHitPointsLabel.Name = "ghostHitPointsLabel";
-            this.ghostHitPointsLabel.Size = new System.Drawing.Size(74, 13);
+            this.ghostHitPointsLabel.Size = new System.Drawing.Size(0, 13);
             this.ghostHitPointsLabel.TabIndex = 5;
-            this.ghostHitPointsLabel.Text = "ghostHitPoints";
             // 
             // ghostLabel
             // 
@@ -320,9 +318,8 @@
             this.batHitPointsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.batHitPointsLabel.Location = new System.Drawing.Point(50, 15);
             this.batHitPointsLabel.Name = "batHitPointsLabel";
-            this.batHitPointsLabel.Size = new System.Drawing.Size(63, 13);
+            this.batHitPointsLabel.Size = new System.Drawing.Size(0, 13);
             this.batHitPointsLabel.TabIndex = 3;
-            this.batHitPointsLabel.Text = "batHitPoints";
             // 
             // batLabel
             // 
@@ -350,9 +347,8 @@
             this.playerHitPointsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playerHitPointsLabel.Location = new System.Drawing.Point(50, 0);
             this.playerHitPointsLabel.Name = "playerHitPointsLabel";
-            this.playerHitPointsLabel.Size = new System.Drawing.Size(76, 13);
+            this.playerHitPointsLabel.Size = new System.Drawing.Size(0, 13);
             this.playerHitPointsLabel.TabIndex = 1;
-            this.playerHitPointsLabel.Text = "playerHitPoints";
             // 
             // playerIcon
             // 
@@ -489,6 +485,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "The Expedition";
+            this.Load += new System.EventHandler(this.Form1_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.swordPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bowPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.macePictureBox)).EndInit();
