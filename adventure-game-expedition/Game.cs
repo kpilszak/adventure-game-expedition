@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace adventure_game_expedition
@@ -72,47 +70,54 @@ namespace adventure_game_expedition
             switch (level)
             {
                 case 1:
-                    Enemies = new List<Enemy>();
-                    Enemies.Add(new Bat(this, GetRandomLocation(random)));
+                    Enemies = new List<Enemy>() {
+                        new Bat(this, GetRandomLocation(random))
+                    };
                     WeaponInRoom = new Sword(this, GetRandomLocation(random));
                     break;
                 case 2:
-                    Enemies = new List<Enemy>();
-                    Enemies.Add(new Ghost(this, GetRandomLocation(random)));
+                    Enemies = new List<Enemy>(){
+                        new Ghost(this, GetRandomLocation(random))
+                    };
                     WeaponInRoom = new BluePotion(this, GetRandomLocation(random));
                     break;
                 case 3:
-                    Enemies = new List<Enemy>();
-                    Enemies.Add(new Ghoul(this, GetRandomLocation(random)));
+                    Enemies = new List<Enemy>(){
+                        new Ghoul(this, GetRandomLocation(random))
+                    };
                     WeaponInRoom = new Bow(this, GetRandomLocation(random));
                     break;
                 case 4:
-                    Enemies = new List<Enemy>();
-                    Enemies.Add(new Bat(this, GetRandomLocation(random)));
-                    Enemies.Add(new Ghost(this, GetRandomLocation(random)));
+                    Enemies = new List<Enemy>(){
+                        new Bat(this, GetRandomLocation(random)),
+                        new Ghost(this, GetRandomLocation(random))
+                    };
                     if (!CheckPlayerInventory("Bow"))
                         WeaponInRoom = new Bow(this, GetRandomLocation(random));
                     else if (!CheckPlayerInventory("Blue potion"))
                         WeaponInRoom = new BluePotion(this, GetRandomLocation(random));
                     break;
                 case 5:
-                    Enemies = new List<Enemy>();
-                    Enemies.Add(new Bat(this, GetRandomLocation(random)));
-                    Enemies.Add(new Ghoul(this, GetRandomLocation(random)));
+                    Enemies = new List<Enemy>(){
+                        new Bat(this, GetRandomLocation(random)),
+                        new Ghoul(this, GetRandomLocation(random))
+                    };
                     if (!CheckPlayerInventory("Blue potion"))
                         WeaponInRoom = new RedPotion(this, GetRandomLocation(random));
                     break;
                 case 6:
-                    Enemies = new List<Enemy>();
-                    Enemies.Add(new Ghost(this, GetRandomLocation(random)));
-                    Enemies.Add(new Ghoul(this, GetRandomLocation(random)));
+                    Enemies = new List<Enemy>(){
+                        new Ghost(this, GetRandomLocation(random)),
+                        new Ghoul(this, GetRandomLocation(random))
+                    };
                     WeaponInRoom = new Mace(this, GetRandomLocation(random));
                     break;
                 case 7:
-                    Enemies = new List<Enemy>();
-                    Enemies.Add(new Bat(this, GetRandomLocation(random)));
-                    Enemies.Add(new Ghost(this, GetRandomLocation(random)));
-                    Enemies.Add(new Ghoul(this, GetRandomLocation(random)));
+                    Enemies = new List<Enemy>(){
+                        new Bat(this, GetRandomLocation(random)),
+                        new Ghost(this, GetRandomLocation(random)),
+                        new Ghoul(this, GetRandomLocation(random))
+                    };
                     if (!CheckPlayerInventory("Mace"))
                         WeaponInRoom = new Mace(this, GetRandomLocation(random));
                     else if (!CheckPlayerInventory("Blue potion") && !CheckPlayerInventory("Red potion"))
