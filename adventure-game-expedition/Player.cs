@@ -46,5 +46,10 @@ namespace adventure_game_expedition
 
             HitPoints -= random.Next(1, maxDamage);
         }
+
+        public void IncreaseHealth(int health, Random random)
+        {
+            HitPoints += random.Next(1, health);
+        }
     }
 }
