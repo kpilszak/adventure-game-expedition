@@ -27,7 +27,124 @@ namespace adventure_game_expedition
             UpdateCharacters();
         }
 
+        public void UpdateCharacters()
+        {
+            playerIcon.Location = game.PlayerLocation;
+            playerIcon.Visible = true;
+            playerHitPointsLabel.Text = game.PlayerHitPoints.ToString();
 
+            bool showBat = false;
+            bool showGhost = false;
+            bool showGhoul = false;
+            int enemiesShown = 0;
+
+            foreach (Enemy enemy in game.Enemies)
+            {
+                if (enemy is Bat)
+                {
+                    batIcon.Location = enemy.Location;
+                    batHitPointsLabel.Text = enemy.HitPoints.ToString();
+                    if (enemy.HitPoints > 0)
+                    {
+                        showBat = true;
+                        batIcon.Visible = true;
+                        enemiesShown++;
+                    }
+                }
+                else if (enemy is Ghost)
+                {
+                    ghostIcon.Location = enemy.Location;
+                    ghostHitPointsLabel.Text = enemy.HitPoints.ToString();
+                    if (enemy.HitPoints > 0)
+                    {
+                        showGhost = true;
+                        ghostIcon.Visible = true;
+                        enemiesShown++;
+                    }
+                }
+                else if (enemy is Ghoul)
+                {
+                    ghoulIcon.Location = enemy.Location;
+                    ghoulHitPointsLabel.Text = enemy.HitPoints.ToString();
+                    if (enemy.HitPoints > 0)
+                    {
+                        showGhoul = true;
+                        ghoulIcon.Visible = true;
+                        enemiesShown++;
+                    }
+                }
+            }
+
+            swordIcon.Visible = false;
+            bowIcon.Visible = false;
+            maceIcon.Visible = false;
+            bluePotionIcon.Visible = false;
+            redPotionIcon.Visible = false;
+
+            Control weaponControl = null;
+            switch (game.WeaponInRoom.Name)
+            {
+                case "Sword":
+                    weaponControl = swordIcon;
+                    break;
+                case "Bow":
+                    weaponControl = bowIcon;
+                    break;
+                case "Mace":
+                    weaponControl = maceIcon;
+                    break;
+                case "Blue potion":
+                    weaponControl = bluePotionIcon;
+                    break;
+                case "Red potion":
+                    weaponControl = redPotionIcon;
+                    break;
+                default:
+                    break;
+            }
+            weaponControl.Visible = true;
+
+            if (game.CheckPlayerInventory("Sword"))
+                swordPictureBox.Visible = true;
+            else
+                swordPictureBox.Visible = false;
+            if (game.CheckPlayerInventory("Bow"))
+                bowPictureBox.Visible = true;
+            else
+                bowPictureBox.Visible = false;
+            if (game.CheckPlayerInventory("Mace"))
+                macePictureBox.Visible = true;
+            else
+                macePictureBox.Visible = false;
+            if (game.CheckPlayerInventory("Blue potion"))
+                bluePotionPictureBox.Visible = true;
+            else
+                bluePotionPictureBox.Visible = false;
+            if (game.CheckPlayerInventory("Red potion"))
+                redPotionPictureBox.Visible = true;
+            else
+                redPotionPictureBox.Visible = false;
+
+            weaponControl.Location = game.WeaponInRoom.Location;
+            if (game.WeaponInRoom.PickedUp)
+                weaponControl.Visible = false;
+            else
+                weaponControl.Visible = false;
+
+            if (game.PlayerHitPoints <= 0)
+            {
+                MessageBox.Show("You died");
+                Application.Exit();
+            }
+
+            if (enemiesShown < 1)
+            {
+                MessageBox.Show("You have defeated the enemies on this level");
+                game.NewLevel(random);
+                UpdateCharacters();
+            }
+            
+        }
 
         private void swordPictureBox_Click(object sender, EventArgs e)
         {
