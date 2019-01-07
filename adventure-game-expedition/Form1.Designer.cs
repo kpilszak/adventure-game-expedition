@@ -86,60 +86,60 @@
             this.swordPictureBox.BackColor = System.Drawing.Color.Transparent;
             this.swordPictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("swordPictureBox.BackgroundImage")));
             this.swordPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.swordPictureBox.Location = new System.Drawing.Point(135, 566);
-            this.swordPictureBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.swordPictureBox.Location = new System.Drawing.Point(90, 368);
             this.swordPictureBox.Name = "swordPictureBox";
-            this.swordPictureBox.Size = new System.Drawing.Size(75, 77);
+            this.swordPictureBox.Size = new System.Drawing.Size(50, 50);
             this.swordPictureBox.TabIndex = 0;
             this.swordPictureBox.TabStop = false;
+            this.swordPictureBox.Click += new System.EventHandler(this.swordPictureBox_Click);
             // 
             // bowPictureBox
             // 
             this.bowPictureBox.BackColor = System.Drawing.Color.Transparent;
             this.bowPictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bowPictureBox.BackgroundImage")));
             this.bowPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bowPictureBox.Location = new System.Drawing.Point(219, 566);
-            this.bowPictureBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bowPictureBox.Location = new System.Drawing.Point(146, 368);
             this.bowPictureBox.Name = "bowPictureBox";
-            this.bowPictureBox.Size = new System.Drawing.Size(75, 77);
+            this.bowPictureBox.Size = new System.Drawing.Size(50, 50);
             this.bowPictureBox.TabIndex = 1;
             this.bowPictureBox.TabStop = false;
+            this.bowPictureBox.Click += new System.EventHandler(this.bowPictureBox_Click);
             // 
             // macePictureBox
             // 
             this.macePictureBox.BackColor = System.Drawing.Color.Transparent;
             this.macePictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("macePictureBox.BackgroundImage")));
             this.macePictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.macePictureBox.Location = new System.Drawing.Point(303, 566);
-            this.macePictureBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.macePictureBox.Location = new System.Drawing.Point(202, 368);
             this.macePictureBox.Name = "macePictureBox";
-            this.macePictureBox.Size = new System.Drawing.Size(75, 77);
+            this.macePictureBox.Size = new System.Drawing.Size(50, 50);
             this.macePictureBox.TabIndex = 2;
             this.macePictureBox.TabStop = false;
+            this.macePictureBox.Click += new System.EventHandler(this.macePictureBox_Click);
             // 
             // bluePotionPictureBox
             // 
             this.bluePotionPictureBox.BackColor = System.Drawing.Color.Transparent;
             this.bluePotionPictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bluePotionPictureBox.BackgroundImage")));
             this.bluePotionPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bluePotionPictureBox.Location = new System.Drawing.Point(387, 566);
-            this.bluePotionPictureBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bluePotionPictureBox.Location = new System.Drawing.Point(258, 368);
             this.bluePotionPictureBox.Name = "bluePotionPictureBox";
-            this.bluePotionPictureBox.Size = new System.Drawing.Size(75, 77);
+            this.bluePotionPictureBox.Size = new System.Drawing.Size(50, 50);
             this.bluePotionPictureBox.TabIndex = 3;
             this.bluePotionPictureBox.TabStop = false;
+            this.bluePotionPictureBox.Click += new System.EventHandler(this.bluePotionPictureBox_Click);
             // 
             // redPotionPictureBox
             // 
             this.redPotionPictureBox.BackColor = System.Drawing.Color.Transparent;
             this.redPotionPictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("redPotionPictureBox.BackgroundImage")));
             this.redPotionPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.redPotionPictureBox.Location = new System.Drawing.Point(471, 566);
-            this.redPotionPictureBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.redPotionPictureBox.Location = new System.Drawing.Point(314, 368);
             this.redPotionPictureBox.Name = "redPotionPictureBox";
-            this.redPotionPictureBox.Size = new System.Drawing.Size(75, 77);
+            this.redPotionPictureBox.Size = new System.Drawing.Size(50, 50);
             this.redPotionPictureBox.TabIndex = 4;
             this.redPotionPictureBox.TabStop = false;
+            this.redPotionPictureBox.Click += new System.EventHandler(this.redPotionPictureBox_Click);
             // 
             // groupBox1
             // 
@@ -148,54 +148,52 @@
             this.groupBox1.Controls.Add(this.upMoveButton);
             this.groupBox1.Controls.Add(this.rightMoveButton);
             this.groupBox1.Controls.Add(this.leftMoveButton);
-            this.groupBox1.Location = new System.Drawing.Point(555, 545);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Location = new System.Drawing.Point(370, 354);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Size = new System.Drawing.Size(170, 123);
+            this.groupBox1.Size = new System.Drawing.Size(113, 80);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Move";
             // 
             // downMoveButton
             // 
-            this.downMoveButton.Location = new System.Drawing.Point(63, 77);
-            this.downMoveButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.downMoveButton.Location = new System.Drawing.Point(42, 50);
             this.downMoveButton.Name = "downMoveButton";
-            this.downMoveButton.Size = new System.Drawing.Size(45, 46);
+            this.downMoveButton.Size = new System.Drawing.Size(30, 30);
             this.downMoveButton.TabIndex = 3;
             this.downMoveButton.Text = " ↓";
             this.downMoveButton.UseVisualStyleBackColor = true;
+            this.downMoveButton.Click += new System.EventHandler(this.downMoveButton_Click);
             // 
             // upMoveButton
             // 
-            this.upMoveButton.Location = new System.Drawing.Point(63, 22);
-            this.upMoveButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.upMoveButton.Location = new System.Drawing.Point(42, 14);
             this.upMoveButton.Name = "upMoveButton";
-            this.upMoveButton.Size = new System.Drawing.Size(45, 46);
+            this.upMoveButton.Size = new System.Drawing.Size(30, 30);
             this.upMoveButton.TabIndex = 2;
             this.upMoveButton.Text = " ↑";
             this.upMoveButton.UseVisualStyleBackColor = true;
+            this.upMoveButton.Click += new System.EventHandler(this.upMoveButton_Click);
             // 
             // rightMoveButton
             // 
-            this.rightMoveButton.Location = new System.Drawing.Point(117, 52);
-            this.rightMoveButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rightMoveButton.Location = new System.Drawing.Point(78, 34);
             this.rightMoveButton.Name = "rightMoveButton";
-            this.rightMoveButton.Size = new System.Drawing.Size(45, 46);
+            this.rightMoveButton.Size = new System.Drawing.Size(30, 30);
             this.rightMoveButton.TabIndex = 1;
             this.rightMoveButton.Text = "→";
             this.rightMoveButton.UseVisualStyleBackColor = true;
+            this.rightMoveButton.Click += new System.EventHandler(this.rightMoveButton_Click);
             // 
             // leftMoveButton
             // 
-            this.leftMoveButton.Location = new System.Drawing.Point(9, 52);
-            this.leftMoveButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.leftMoveButton.Location = new System.Drawing.Point(6, 34);
             this.leftMoveButton.Name = "leftMoveButton";
-            this.leftMoveButton.Size = new System.Drawing.Size(45, 46);
+            this.leftMoveButton.Size = new System.Drawing.Size(30, 30);
             this.leftMoveButton.TabIndex = 0;
             this.leftMoveButton.Text = "←";
             this.leftMoveButton.UseVisualStyleBackColor = true;
+            this.leftMoveButton.Click += new System.EventHandler(this.leftMoveButton_Click);
             // 
             // groupBox2
             // 
@@ -204,54 +202,53 @@
             this.groupBox2.Controls.Add(this.upAttackButton);
             this.groupBox2.Controls.Add(this.rightAttackButton);
             this.groupBox2.Controls.Add(this.leftAttackButton);
-            this.groupBox2.Location = new System.Drawing.Point(750, 545);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox2.Location = new System.Drawing.Point(500, 354);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox2.Size = new System.Drawing.Size(170, 123);
+            this.groupBox2.Size = new System.Drawing.Size(113, 80);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Attack";
             // 
             // downAttackButton
             // 
-            this.downAttackButton.Location = new System.Drawing.Point(63, 77);
-            this.downAttackButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.downAttackButton.Location = new System.Drawing.Point(42, 50);
             this.downAttackButton.Name = "downAttackButton";
-            this.downAttackButton.Size = new System.Drawing.Size(45, 46);
+            this.downAttackButton.Size = new System.Drawing.Size(30, 30);
             this.downAttackButton.TabIndex = 3;
             this.downAttackButton.Text = " ↓";
             this.downAttackButton.UseVisualStyleBackColor = true;
+            this.downAttackButton.Click += new System.EventHandler(this.downAttackButton_Click);
             // 
             // upAttackButton
             // 
-            this.upAttackButton.Location = new System.Drawing.Point(63, 22);
-            this.upAttackButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.upAttackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.upAttackButton.Location = new System.Drawing.Point(42, 14);
             this.upAttackButton.Name = "upAttackButton";
-            this.upAttackButton.Size = new System.Drawing.Size(45, 46);
+            this.upAttackButton.Size = new System.Drawing.Size(30, 30);
             this.upAttackButton.TabIndex = 2;
             this.upAttackButton.Text = " ↑";
             this.upAttackButton.UseVisualStyleBackColor = true;
+            this.upAttackButton.Click += new System.EventHandler(this.upAttackButton_Click);
             // 
             // rightAttackButton
             // 
-            this.rightAttackButton.Location = new System.Drawing.Point(117, 52);
-            this.rightAttackButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rightAttackButton.Location = new System.Drawing.Point(78, 34);
             this.rightAttackButton.Name = "rightAttackButton";
-            this.rightAttackButton.Size = new System.Drawing.Size(45, 46);
+            this.rightAttackButton.Size = new System.Drawing.Size(30, 30);
             this.rightAttackButton.TabIndex = 1;
             this.rightAttackButton.Text = "→";
             this.rightAttackButton.UseVisualStyleBackColor = true;
+            this.rightAttackButton.Click += new System.EventHandler(this.rightAttackButton_Click);
             // 
             // leftAttackButton
             // 
-            this.leftAttackButton.Location = new System.Drawing.Point(9, 52);
-            this.leftAttackButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.leftAttackButton.Location = new System.Drawing.Point(6, 34);
             this.leftAttackButton.Name = "leftAttackButton";
-            this.leftAttackButton.Size = new System.Drawing.Size(45, 46);
+            this.leftAttackButton.Size = new System.Drawing.Size(30, 30);
             this.leftAttackButton.TabIndex = 0;
             this.leftAttackButton.Text = "←";
             this.leftAttackButton.UseVisualStyleBackColor = true;
+            this.leftAttackButton.Click += new System.EventHandler(this.leftAttackButton_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -267,25 +264,23 @@
             this.tableLayoutPanel1.Controls.Add(this.batLabel, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.playerLabel, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.playerHitPointsLabel, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(716, 437);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(477, 284);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(196, 92);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(131, 60);
             this.tableLayoutPanel1.TabIndex = 7;
             // 
             // ghoulHitPointsLabel
             // 
             this.ghoulHitPointsLabel.AutoSize = true;
             this.ghoulHitPointsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ghoulHitPointsLabel.Location = new System.Drawing.Point(75, 69);
-            this.ghoulHitPointsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ghoulHitPointsLabel.Location = new System.Drawing.Point(50, 45);
             this.ghoulHitPointsLabel.Name = "ghoulHitPointsLabel";
-            this.ghoulHitPointsLabel.Size = new System.Drawing.Size(99, 17);
+            this.ghoulHitPointsLabel.Size = new System.Drawing.Size(74, 13);
             this.ghoulHitPointsLabel.TabIndex = 7;
             this.ghoulHitPointsLabel.Text = "ghoulHitPoints";
             // 
@@ -293,10 +288,9 @@
             // 
             this.ghoulLabel.AutoSize = true;
             this.ghoulLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ghoulLabel.Location = new System.Drawing.Point(4, 69);
-            this.ghoulLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ghoulLabel.Location = new System.Drawing.Point(3, 45);
             this.ghoulLabel.Name = "ghoulLabel";
-            this.ghoulLabel.Size = new System.Drawing.Size(46, 17);
+            this.ghoulLabel.Size = new System.Drawing.Size(35, 13);
             this.ghoulLabel.TabIndex = 6;
             this.ghoulLabel.Text = "Ghoul";
             // 
@@ -304,10 +298,9 @@
             // 
             this.ghostHitPointsLabel.AutoSize = true;
             this.ghostHitPointsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ghostHitPointsLabel.Location = new System.Drawing.Point(75, 46);
-            this.ghostHitPointsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ghostHitPointsLabel.Location = new System.Drawing.Point(50, 30);
             this.ghostHitPointsLabel.Name = "ghostHitPointsLabel";
-            this.ghostHitPointsLabel.Size = new System.Drawing.Size(99, 17);
+            this.ghostHitPointsLabel.Size = new System.Drawing.Size(74, 13);
             this.ghostHitPointsLabel.TabIndex = 5;
             this.ghostHitPointsLabel.Text = "ghostHitPoints";
             // 
@@ -315,10 +308,9 @@
             // 
             this.ghostLabel.AutoSize = true;
             this.ghostLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ghostLabel.Location = new System.Drawing.Point(4, 46);
-            this.ghostLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ghostLabel.Location = new System.Drawing.Point(3, 30);
             this.ghostLabel.Name = "ghostLabel";
-            this.ghostLabel.Size = new System.Drawing.Size(46, 17);
+            this.ghostLabel.Size = new System.Drawing.Size(35, 13);
             this.ghostLabel.TabIndex = 4;
             this.ghostLabel.Text = "Ghost";
             // 
@@ -326,10 +318,9 @@
             // 
             this.batHitPointsLabel.AutoSize = true;
             this.batHitPointsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.batHitPointsLabel.Location = new System.Drawing.Point(75, 23);
-            this.batHitPointsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.batHitPointsLabel.Location = new System.Drawing.Point(50, 15);
             this.batHitPointsLabel.Name = "batHitPointsLabel";
-            this.batHitPointsLabel.Size = new System.Drawing.Size(84, 17);
+            this.batHitPointsLabel.Size = new System.Drawing.Size(63, 13);
             this.batHitPointsLabel.TabIndex = 3;
             this.batHitPointsLabel.Text = "batHitPoints";
             // 
@@ -337,10 +328,9 @@
             // 
             this.batLabel.AutoSize = true;
             this.batLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.batLabel.Location = new System.Drawing.Point(4, 23);
-            this.batLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.batLabel.Location = new System.Drawing.Point(3, 15);
             this.batLabel.Name = "batLabel";
-            this.batLabel.Size = new System.Drawing.Size(29, 17);
+            this.batLabel.Size = new System.Drawing.Size(23, 13);
             this.batLabel.TabIndex = 2;
             this.batLabel.Text = "Bat";
             // 
@@ -348,10 +338,9 @@
             // 
             this.playerLabel.AutoSize = true;
             this.playerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.playerLabel.Location = new System.Drawing.Point(4, 0);
-            this.playerLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.playerLabel.Location = new System.Drawing.Point(3, 0);
             this.playerLabel.Name = "playerLabel";
-            this.playerLabel.Size = new System.Drawing.Size(48, 17);
+            this.playerLabel.Size = new System.Drawing.Size(36, 13);
             this.playerLabel.TabIndex = 0;
             this.playerLabel.Text = "Player";
             // 
@@ -359,10 +348,9 @@
             // 
             this.playerHitPointsLabel.AutoSize = true;
             this.playerHitPointsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.playerHitPointsLabel.Location = new System.Drawing.Point(75, 0);
-            this.playerHitPointsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.playerHitPointsLabel.Location = new System.Drawing.Point(50, 0);
             this.playerHitPointsLabel.Name = "playerHitPointsLabel";
-            this.playerHitPointsLabel.Size = new System.Drawing.Size(103, 17);
+            this.playerHitPointsLabel.Size = new System.Drawing.Size(76, 13);
             this.playerHitPointsLabel.TabIndex = 1;
             this.playerHitPointsLabel.Text = "playerHitPoints";
             // 
@@ -371,10 +359,9 @@
             this.playerIcon.BackColor = System.Drawing.Color.Transparent;
             this.playerIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("playerIcon.BackgroundImage")));
             this.playerIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.playerIcon.Location = new System.Drawing.Point(135, 105);
-            this.playerIcon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.playerIcon.Location = new System.Drawing.Point(90, 68);
             this.playerIcon.Name = "playerIcon";
-            this.playerIcon.Size = new System.Drawing.Size(45, 46);
+            this.playerIcon.Size = new System.Drawing.Size(30, 30);
             this.playerIcon.TabIndex = 8;
             this.playerIcon.TabStop = false;
             this.playerIcon.Visible = false;
@@ -384,10 +371,9 @@
             this.batIcon.BackColor = System.Drawing.Color.Transparent;
             this.batIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("batIcon.BackgroundImage")));
             this.batIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.batIcon.Location = new System.Drawing.Point(189, 105);
-            this.batIcon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.batIcon.Location = new System.Drawing.Point(126, 68);
             this.batIcon.Name = "batIcon";
-            this.batIcon.Size = new System.Drawing.Size(45, 46);
+            this.batIcon.Size = new System.Drawing.Size(30, 30);
             this.batIcon.TabIndex = 9;
             this.batIcon.TabStop = false;
             this.batIcon.Visible = false;
@@ -397,10 +383,9 @@
             this.ghostIcon.BackColor = System.Drawing.Color.Transparent;
             this.ghostIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ghostIcon.BackgroundImage")));
             this.ghostIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ghostIcon.Location = new System.Drawing.Point(243, 105);
-            this.ghostIcon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ghostIcon.Location = new System.Drawing.Point(162, 68);
             this.ghostIcon.Name = "ghostIcon";
-            this.ghostIcon.Size = new System.Drawing.Size(45, 46);
+            this.ghostIcon.Size = new System.Drawing.Size(30, 30);
             this.ghostIcon.TabIndex = 10;
             this.ghostIcon.TabStop = false;
             this.ghostIcon.Visible = false;
@@ -410,10 +395,9 @@
             this.ghoulIcon.BackColor = System.Drawing.Color.Transparent;
             this.ghoulIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ghoulIcon.BackgroundImage")));
             this.ghoulIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ghoulIcon.Location = new System.Drawing.Point(297, 105);
-            this.ghoulIcon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ghoulIcon.Location = new System.Drawing.Point(198, 68);
             this.ghoulIcon.Name = "ghoulIcon";
-            this.ghoulIcon.Size = new System.Drawing.Size(45, 46);
+            this.ghoulIcon.Size = new System.Drawing.Size(30, 30);
             this.ghoulIcon.TabIndex = 11;
             this.ghoulIcon.TabStop = false;
             this.ghoulIcon.Visible = false;
@@ -423,10 +407,9 @@
             this.bluePotionIcon.BackColor = System.Drawing.Color.Transparent;
             this.bluePotionIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bluePotionIcon.BackgroundImage")));
             this.bluePotionIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bluePotionIcon.Location = new System.Drawing.Point(351, 105);
-            this.bluePotionIcon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bluePotionIcon.Location = new System.Drawing.Point(234, 68);
             this.bluePotionIcon.Name = "bluePotionIcon";
-            this.bluePotionIcon.Size = new System.Drawing.Size(45, 46);
+            this.bluePotionIcon.Size = new System.Drawing.Size(30, 30);
             this.bluePotionIcon.TabIndex = 12;
             this.bluePotionIcon.TabStop = false;
             this.bluePotionIcon.Visible = false;
@@ -436,10 +419,9 @@
             this.redPotionIcon.BackColor = System.Drawing.Color.Transparent;
             this.redPotionIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("redPotionIcon.BackgroundImage")));
             this.redPotionIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.redPotionIcon.Location = new System.Drawing.Point(405, 105);
-            this.redPotionIcon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.redPotionIcon.Location = new System.Drawing.Point(270, 68);
             this.redPotionIcon.Name = "redPotionIcon";
-            this.redPotionIcon.Size = new System.Drawing.Size(45, 46);
+            this.redPotionIcon.Size = new System.Drawing.Size(30, 30);
             this.redPotionIcon.TabIndex = 13;
             this.redPotionIcon.TabStop = false;
             this.redPotionIcon.Visible = false;
@@ -449,10 +431,9 @@
             this.swordIcon.BackColor = System.Drawing.Color.Transparent;
             this.swordIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("swordIcon.BackgroundImage")));
             this.swordIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.swordIcon.Location = new System.Drawing.Point(459, 105);
-            this.swordIcon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.swordIcon.Location = new System.Drawing.Point(306, 68);
             this.swordIcon.Name = "swordIcon";
-            this.swordIcon.Size = new System.Drawing.Size(45, 46);
+            this.swordIcon.Size = new System.Drawing.Size(30, 30);
             this.swordIcon.TabIndex = 14;
             this.swordIcon.TabStop = false;
             this.swordIcon.Visible = false;
@@ -462,10 +443,9 @@
             this.bowIcon.BackColor = System.Drawing.Color.Transparent;
             this.bowIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bowIcon.BackgroundImage")));
             this.bowIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bowIcon.Location = new System.Drawing.Point(513, 105);
-            this.bowIcon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bowIcon.Location = new System.Drawing.Point(342, 68);
             this.bowIcon.Name = "bowIcon";
-            this.bowIcon.Size = new System.Drawing.Size(45, 46);
+            this.bowIcon.Size = new System.Drawing.Size(30, 30);
             this.bowIcon.TabIndex = 15;
             this.bowIcon.TabStop = false;
             this.bowIcon.Visible = false;
@@ -475,21 +455,20 @@
             this.maceIcon.BackColor = System.Drawing.Color.Transparent;
             this.maceIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("maceIcon.BackgroundImage")));
             this.maceIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.maceIcon.Location = new System.Drawing.Point(567, 105);
-            this.maceIcon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.maceIcon.Location = new System.Drawing.Point(378, 68);
             this.maceIcon.Name = "maceIcon";
-            this.maceIcon.Size = new System.Drawing.Size(45, 46);
+            this.maceIcon.Size = new System.Drawing.Size(30, 30);
             this.maceIcon.TabIndex = 16;
             this.maceIcon.TabStop = false;
             this.maceIcon.Visible = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1042, 711);
+            this.ClientSize = new System.Drawing.Size(695, 456);
             this.Controls.Add(this.ghoulIcon);
             this.Controls.Add(this.ghostIcon);
             this.Controls.Add(this.playerIcon);
@@ -508,7 +487,6 @@
             this.Controls.Add(this.bowIcon);
             this.Controls.Add(this.maceIcon);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "The Expedition";
             ((System.ComponentModel.ISupportInitialize)(this.swordPictureBox)).EndInit();
