@@ -36,7 +36,7 @@ namespace adventure_game_expedition
                     game.WeaponInRoom.PickUpWeapon();
                     inventory.Add(game.WeaponInRoom);
                     if (inventory.Count == 1)
-                        equippedWeapon = game.WeaponInRoom;
+                        Equip(game.WeaponInRoom.Name);
                 }
             }
         }
@@ -50,6 +50,13 @@ namespace adventure_game_expedition
         public void IncreaseHealth(int health, Random random)
         {
             HitPoints += random.Next(1, health);
+        }
+
+        public void Equip(string weaponName)
+        {
+            foreach (Weapon weapon in inventory)
+                if (weapon.Name == weaponName)
+                    equippedWeapon = weapon;
         }
     }
 }
